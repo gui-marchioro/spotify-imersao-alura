@@ -1,0 +1,18 @@
+artists.json tem o objetivo de servir como uma API fake para a UI
+
+Como consumir a API artists.json?
+- Instalar json-server
+npm i json-server -g
+
+Porém:
+a versão do json-server (que baixa automaticamente) não tem o filtro _like. Portanto não retorna nada
+Qual o comando pra versão certa?
+"Digita json-server --version  se a versão que tiver lá for maior ou igual a 1.0 quer dizer que você está usando uma versão alfa. 
+Então, usa o comando para desinstalar
+    npm uninstall -g json-server 
+e depois 
+    npm install -g json-server@0.17.4  
+para instalar uma versão especifica que não está na versão alfa"
+
+- Rodar json-server no CMD, Powershell talvez não funcione (Porta a ser usada pode ser escolhida)
+json-server --watch api-artists/artists.json --port 3000
